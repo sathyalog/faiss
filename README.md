@@ -27,6 +27,8 @@ how to run?
 `uv run main-flatl2.py` to run FLATL2 implementation method
 `uv run IVF.py` to run IVF method
 `uv run HNSW.py` to run HNSW method
+
+```
 ---
 
 ## 🔬 Comparison of the 3 Search Methods
