@@ -10,6 +10,23 @@ This repository demonstrates how to build and query semantic vector search engin
 
 When text, images, or audio are converted into mathematical representations called **embeddings** (vectors of high-dimensional numbers), standard databases struggle to search through them efficiently. FAISS allows you to search through millions or billions of vector embeddings in milliseconds to find items that are semantically similar.
 
+## ⚡ Quickstart & Setup Guide
+
+### Prerequisites
+* Python 3.9+
+* An API key from [OpenRouter](https://openrouter.ai/)
+
+### 1. Installation
+
+Clone the repository and install the required dependencies:
+
+```bash
+pip install openrouter faiss-cpu numpy python-dotenv
+
+how to run?
+`uv run main-flatl2.py` to run FLATL2 implementation method
+`uv run IVF.py` to run IVF method
+`uv run HNSW.py` to run HNSW method
 ---
 
 ## 🔬 Comparison of the 3 Search Methods
@@ -56,17 +73,13 @@ FAISS is widely used in modern AI and software engineering, particularly for:
 3. **Recommendation Systems:** Suggesting products, articles, or videos based on user embedding similarity (e.g., Spotify, Netflix, E-commerce).
 4. **Duplicate Detection:** Detecting near-identical images or plagiarized text in massive databases.
 
+## Top companies using FAISS in production:
+⚬	Meta (Facebook & Instagram): Created FAISS to run large-scale content recommendation feeds, image recognition, and duplicate content/spam detection across billions of user posts.
+⚬	eBay: Uses FAISS to power visual image search, allowing shoppers to upload photos and instantly discover visually similar products across billions of active listings.
+⚬	Shopify: Leverages FAISS to index product catalog embeddings, delivering instant personalized product recommendations for thousands of online merchants.
+⚬	Pinterest: Uses FAISS in its visual search pipeline to match uploaded image pins against billions of catalog images in real time.
+⚬	Instacart: Uses FAISS-backed vector search to understand user search intent and retrieve relevant grocery items even when queries don't match exact keywords.
+
 ---
 
-## ⚡ Quickstart & Setup Guide
 
-### Prerequisites
-* Python 3.9+
-* An API key from [OpenRouter](https://openrouter.ai/)
-
-### 1. Installation
-
-Clone the repository and install the required dependencies:
-
-```bash
-pip install openrouter faiss-cpu numpy python-dotenv
